@@ -83,6 +83,6 @@ analytics :
 
 
 # For about.html. Fell free to create your own!
-skill_software_keywords: [C#,ASP.Net,Entity Framework, WebAPI,SQL Server,SharePoint]
-skill_web_keywords: [HTML5, CSS3, JavaScript, TypeScript, MeteorJS, JQuery, Ajax, AngularJS, NodeJS, ExpressJS, MongoDB, Redis]
+skill_software_keywords: [C#,ASP.Net,Entity Framework, WebAPI,SQL Server,SharePoint, ASP.Net WebAPI, ]
+skill_web_keywords: [HTML5, CSS3, JavaScript, TypeScript, MeteorJS, JQuery, KendoUI, AngularJS, NodeJS, ExpressJS, MongoDB, Firebase, VueJS]
 skill_mobile_app_keywords: [NativeScript, Sketch UI Desgin]
