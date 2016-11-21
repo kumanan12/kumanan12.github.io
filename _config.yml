@@ -67,6 +67,10 @@ navs:
     href: /blog
     label: Blog
 
+  -
+    href: /books
+    label: My Books
+
 
   -
     href: /about
