@@ -222,6 +222,7 @@
         margin-top: 120px;
         background: url(/assets/images/profile3.jpg) fixed;
     }
+    body{font-size: 1.2 em;}
 }
 
 @media only screen and  (max-device-width: 412px) {
@@ -229,6 +230,7 @@
         margin-top: 120px;
         background: url(/assets/images/profile3-small.jpg) no-repeat bottom fixed;
     }
+    body{font-size: 1.2 em;}
 }
 
 @media only screen and  (max-device-width: 700px) {
@@ -236,6 +238,7 @@
         margin-top: 120px;
         background: url(/assets/images/profile3-medium.jpg) no-repeat center fixed;
     }
+    body{font-size: 1.2 em;}
 }
 
 @media only screen and  (max-device-width: 800px) {
@@ -245,6 +248,7 @@
         overflow: hidden;
         position: fixed;
     }
+   body{font-size: 1.2 em;}
 }
 
 
@@ -255,6 +259,7 @@
         margin-top: 120px;
         background: url(/assets/images/profile3-small.jpg) no-repeat center fixed;
     }
+    body{font-size: 1.2 em;}
 }
 
 /*For IPhone 6 Plus*/
@@ -264,9 +269,8 @@
         background: url(/assets/images/profile3.jpg) no-repeat center;
         overflow: hidden;
         position: fixed;
+
     }
+     body{font-size: 1.2 em;}
 }
 
-body{
-    font-size: 16px;
-}
