@@ -261,8 +261,12 @@
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 3) and (-webkit-device-pixel-ratio: 3) {
     .indexpage {
         margin-top: -70px;
-        background: url(/assets/images/profile3-medium.jpg) no-repeat bottom;
+        background: url(/assets/images/profile3-medium.jpg) no-repeat center;
         overflow: hidden;
         position: fixed;
     }
+}
+
+body{
+    font-size: 14px;
 }
