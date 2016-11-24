@@ -8,8 +8,11 @@
 	<link rel="shortcut icon" type="image/x-icon" href="/assets/images/{{ site.favicon }}">
 
 	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
+	<meta name="description" content="My name is Kumanan Murugesan. I am a software developer living in Raleigh, North Carolina.
+I am originally from chengalpattu, India. In my highschool days, I was a basketball player. I did my engineering
+in Coimbatore Institue of Technology, India, MBA from Department of Management Studies, University Of Madras and
+MS in Computer Science from West Virginia University.">
+    
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml
 		" | prepend: site.baseurl | prepend: site.url }}">
