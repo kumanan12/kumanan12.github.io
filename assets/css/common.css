@@ -34,7 +34,6 @@
 
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #4183c4;
-  background-color: 
 }
 /** Header **/
 
@@ -237,7 +236,6 @@
 }
 
 .indexpage {
-    margin-top: 70px;
     background: url(/assets/images/profile4.jpg) fixed;
     height: 100%;
     width: 100%;
