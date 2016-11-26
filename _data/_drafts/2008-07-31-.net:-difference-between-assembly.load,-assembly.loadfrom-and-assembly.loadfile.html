@@ -1,0 +1,40 @@
+---
+layout: post
+title: ".NET: Difference between Assembly.Load, Assembly.loadfrom and Assembly.loadfile"
+date: '2008-07-31T09:18:00.002-04:00'
+author: Kumanan Murugesan
+tags: 
+modified_time: '2008-07-31T11:38:52.194-04:00'
+blogger_id: tag:blogger.com,1999:blog-10683664.post-721626126689886936
+---
+
+<div align="center"><font face="verdana" size="2">I was curious to know about the difference between<br /></div></font>
+<br /><ol>
+<br /><li><font face="verdana" size="2">Assembly.load</font></li>
+<br /><li><font face="verdana" size="2">Assembly.loadfrom</font></li>
+<br /><li><font face="verdana" size="2">Assembly.loadfile</font></li></ol>
+<br /><p><font face="verdana" size="2">I could not get easy answers by googling. Here is my explanation in simple terms. For more detail information, please look at the references at the bottom of this post.</font></p>
+<br /><p align="center"><font face="verdana" size="4">1. Assembly.load</font></p>
+<br /><p><font face="verdana" size="2">When you do call Assemly.load by just giving the name like Assembly.load("myassembly.dll");</font></p>
+<br /><p><font face="verdana" size="2">the CLR will try to locate it in the directory where the application is running. if it is not available, it will throw a FileNotFoundException.</font></p>
+<br /><p><font face="Verdana" size="2">Example:</font></p>
+<br /><p><font face="Verdana" size="2"><u>Case 1: </u>Loading the assembly by referring the <strong>name.</strong></font></p>
+<br /><p></p>
+<br /><div><code><font color="#3333ff">Assembly assembly = Assembly.Load("Syncfusion.Shared.Web");</font> </code></div>
+<br /><div><code>I got this exception</code></div>
+<br /><div><code>System.IO.FileNotFoundException: Could not load file or assembly 'Syncfusion.Shared.Web' or one of its dependencies. The system cannot find the file specified.</code></div>
+<br /><div><code></code> </div>
+<br /><div><code>After I copied this assembly into my bin\debug directory, It worked.</code></div>
+<br /><div><code>If you running in the release version, you have to put the in the bin\release folder.</code></div>
+<br /><div><code></code> </div>
+<br /><div><code><u>Case 2: </u>Loading the assembly by referring the full name.</code></div>
+<br /><div><code></code> </div>
+<br /><div><code>Assembly.Load("System.ServiceProcess, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a");</code></div>
+<br /><div><code></code> </div>
+<br /><div><code>When you load an assembly like this, It will look for this assembly in the GAC.</code></div>
+<br /><div><code></code> </div>
+<br /><div align="center"><code><font size="4"><strong>2. Assembly.loadfrom</strong></font></code></div>
+<br /><div align="center"> </div>
+<br /><div align="left"><code>When this method is called, it get the assembly from the path</code></div>
+<br /><p><code> </p>
+<br /><div><br /></div></code>
