@@ -6,8 +6,6 @@ author: Kumanan Murugesan
 category: finance
 tags: finance
 ---
-
-
 ## What is Demonetization test
 
 ## Why should we do Demonetization
